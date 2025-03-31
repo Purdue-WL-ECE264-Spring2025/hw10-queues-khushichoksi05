@@ -49,6 +49,7 @@ int number_of_moves(struct game_state start) {
         // if the match is true then we can escape the function. 
         if (match) {
             free_list(visited);
+            free_list(q.data);
             return current.num_steps;
         }
         
